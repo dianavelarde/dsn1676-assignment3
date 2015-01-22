@@ -27,11 +27,12 @@ body {
     height: 100px;
     top: 100px;
     left: 100px;
-    animation: box-rotate 3s ease-in-out infinite alternate;
+    animation: asteroid-rotate 10s ease-in-out infinite;
 }
 
 
-@keyframe box-rotate {
+
+@keyframe asteroid-rotate {
     0% {
         transform: rotate(0deg);
     }
