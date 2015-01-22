@@ -21,25 +21,48 @@ body {
     background-image: url(../img/stars.svg);
 }
 
+img {
+	display: block;
+	width: 100%;
+}
+
+.stars {
+	background-image: url("../images/stars.svg");
+	position: absolute;
+	height: 100%;
+	width: 100vh;
+    animation: stars-scale 20s infinite alternate;
+	animation: stars-scale 20s infinite alternate;
+}
+
+@keyframes stars-scale {
+
+	0% {
+		transform: scale(1,1);
+	}
+
+	100% {
+		transform: scale(2,2);
+	}
+
+}
+
 .asteroid {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 100px;
-    left: 100px;
+    width: 200px;
+    height: 150px;
+    top: 200px;
     animation: asteroid-rotate 10s ease-in-out infinite;
 }
 
+@keyframes asteroid-rotate {
 
+	0% {
+		transform: rotate(0deg);
+	}
 
-@keyframe asteroid-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    
-    100% {
-        transform: rotate(360deg);
-    }
-    
+	100% {
+		transform: rotate(360deg);
+	}
+
 }
-  
