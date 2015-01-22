@@ -58,6 +58,7 @@ body {
     height: 150px;
     top: 200px;
     animation: asteroid-rotate 10s ease-in-out infinite;
+    -webkit-animation: asteroid-rotate 10s ease-in-out infinite;
 }
 
 @keyframes asteroid-rotate {
@@ -72,4 +73,18 @@ body {
 
 }
 
-.star-
+@-webkit-keyframes asteroid-rotate {
+
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+
+}
+
+
+.star-destroyer {
+    
